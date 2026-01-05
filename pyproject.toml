@@ -1,7 +1,7 @@
 [project]
 name = "aiohttp-things"
 packages = [{include = "aiohttp_things", from = "src" }]
-version = "1.1.1"
+version = "1.2.0"
 description = "Modest utility collection for development with AIOHTTP framework."
 license = "MIT"
 
@@ -13,8 +13,8 @@ maintainers = [
 ]
 
 readme = "README.rst"
-homepage = "https://github.com/ri-gilfanov/aiohttp-things"
-repository = "https://github.com/ri-gilfanov/aiohttp-things"
+homepage = "https://github.com/rigilfanov/aiohttp-things"
+repository = "https://github.com/rigilfanov/aiohttp-things"
 documentation = "https://aiohttp-things.readthedocs.io/"
 
 keywords = ["aiohttp", "asyncio"]
@@ -31,6 +31,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Internet",
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Software Development :: Libraries",
@@ -40,18 +41,18 @@ classifiers = [
 
 requires-python = ">=3.9,<3.14"
 dependencies = [
-    "aiohttp (>=3.12.6,<4)",
+    "aiohttp (>=3.13.3,<4)",
 ]
 
 [tool.poetry.group.dev.dependencies]
 aiohttp_jinja2 = ">=1.6"
-mypy = ">=1.16.0"
-pytest = ">=8.3.5"
-pytest-cov = ">=6.1.1"
-ruff = '>=0.11.12'
+mypy = ">=1.19.1"
+pytest = ">=8.4.2"
+pytest-cov = ">=7.0.0"
+ruff = '>=0.14.10'
 sphinx = ">=7.4.7"
 sphinx_rtd_theme = ">=3.0.2"
-tomli = { version = "^2.2.1", optional = true, python = "~3.9 || ~3.10" }
+tomli = { version = "^2.3.0", optional = true, python = "~3.9 || ~3.10" }
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
