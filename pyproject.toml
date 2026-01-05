@@ -1,7 +1,7 @@
 [project]
 name = "aiohttp-things"
 packages = [{include = "aiohttp_things", from = "src" }]
-version = "1.2.0"
+version = "1.2.post0"
 description = "Modest utility collection for development with AIOHTTP framework."
 license = "MIT"
 
@@ -39,7 +39,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 
-requires-python = ">=3.9,<3.14"
+requires-python = ">=3.9,<3.15"
 dependencies = [
     "aiohttp (>=3.13.3,<4)",
 ]
